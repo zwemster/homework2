@@ -15,10 +15,16 @@ public abstract class Employee implements Comparable<Employee>{
      */
     protected double salary;
 
-    public Employee(String name, String surName, double salary) {
+    /**
+     * Возраст сотрудника
+     */
+    protected int age;
+
+    public Employee(String name, String surName, double salary, int age) {
         this.name = name;
         this.surName = surName;
         this.salary = salary;
+        this.age = age;
     }
 
     /**
